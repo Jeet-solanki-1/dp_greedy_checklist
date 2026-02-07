@@ -153,7 +153,7 @@ function vitePluginManusDebugCollector(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/dp_greedy_checklist/' : '/',
+  base: '/',
   plugins,
   resolve: {
     alias: {

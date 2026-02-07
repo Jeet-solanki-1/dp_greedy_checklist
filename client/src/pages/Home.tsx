@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -161,6 +162,9 @@ export default function Home() {
               <p className="mt-2 text-slate-600">Structured thinking template for algorithmic problems</p>
             </div>
             <div className="flex gap-2">
+              <Button asChild size="sm" className="gap-2">
+                <Link href="/how-to-solve">How to solve?</Link>
+              </Button>
               <Button
                 variant="outline"
                 size="sm"
